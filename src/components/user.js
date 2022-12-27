@@ -18,8 +18,12 @@ const User = () => {
     }
     return ( 
         <div className='user-parent-div'>
-            <div className='bg1'></div>
-            <div className='bg2'></div>
+            <div className='bg1'>
+                <h1>Random User</h1>
+            </div>
+            <div className='bg2'>
+                <p className='about'><a target='_blank' href='https://tonnymakondesa.netlify.app/'>About developer</a></p>
+            </div>
             <div className='user'>
                 {userData.map((value)=>(
                     <div className='content'>
