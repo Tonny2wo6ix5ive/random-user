@@ -121,3 +121,30 @@ button:hover{
   opacity: .5;
   transition: ease-in-out .5s;
 }
+
+@media (max-width:600px){
+  
+  .bg1 h1{
+    font-size:xx-large
+  }
+  
+  .user{
+    width:90%;
+    margin: auto;
+    left:5%;
+  }
+
+  .user-details{
+    font-size:small;
+  }
+
+  span{
+    display: none;
+  }
+
+  span[class='appear']{
+    display: block;
+    padding: 0;
+  }
+
+}
