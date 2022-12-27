@@ -25,27 +25,29 @@ const User = () => {
                     <div className='content'>
                         <div className='profile'>
                           <img src={value.picture.medium} />
-                          <p>Hi my name's, {value.name.first} {value.name.last}</p>
+                          <h2>{value.name.first} {value.name.last}</h2>
                           <div className='border'></div>
                         </div>
                         <div className='parent-user-details'>
                             <p className='user-details'>
                                 <ion-icon name="mail-outline"></ion-icon>
-                                {value.email}
+                                <a target='_blank' href='https://twitter.com/Tonny2wo6ix5ive'>
+                                    <span>{value.email}</span>
+                                </a>
                             </p>
                             <p className='user-details'>
                                 <ion-icon name="call-outline"></ion-icon>
-                                {value.cell}
+                                 <span>{value.cell}</span>
                             </p>
                             <p className='user-details'>
                                 <ion-icon name="logo-twitter"></ion-icon>
                                 <a target='_blank' href='https://twitter.com/Tonny2wo6ix5ive'>
-                                    @{value.login.username}
+                                    <span>@{value.login.username}</span>
                                 </a>
                             </p>
                             <p className='user-details'>
                                 <ion-icon name="location-outline"></ion-icon>
-                                {value.location.city}, {value.location.state}, {value.location.country}
+                                <span>{value.location.city}, {value.location.state}, {value.location.country}</span>
                             </p>
                         </div>
                         <button onClick={()=>setReflesh(!reflesh)} >Reflesh</button>
