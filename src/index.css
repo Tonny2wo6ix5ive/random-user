@@ -11,3 +11,53 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.user-parent-div{
+  margin: 0;
+  background-color: #f3f3f3;
+}
+
+.bg1{
+  background-color: #000000;
+  width: 100%;
+  height: 300px;
+}
+
+.bg2{
+  background-color:green;
+  width:100%;
+  height: 300px;
+}
+
+.user{
+  background-color:#f0f8ff;
+  z-index:1;
+  width:60%;
+  height:400px;
+  position: absolute;
+  top:150px;
+  left:20%;
+}
+
+.content{
+}
+
+.profile{ 
+  padding: 10px;
+  text-align: center;
+  background-color:#dfdfdf;
+}
+
+img{
+  border: 1px solid #1e90ff;
+  border-radius: 50%;
+  text-align: center;
+  width: auto;
+  height: 20vh;
+}
+
+.user-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
